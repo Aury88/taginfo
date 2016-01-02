@@ -629,7 +629,7 @@ reports:
         name: Linguaggi
         intro: |
             OpenStreetMap è un progetto internazionale. I tag e le loro
-            descrizioni             possono essere in una qualsiasi lingua.
+            descrizioni possono essere in una qualsiasi lingua.
             Questa tabella mostra le lingue di cui taginfo ha consocenza
             e per ognuna di queste lingue quante pagine wiki che documentano,
             rispettivamente, le chiavi e i tag.
@@ -652,7 +652,7 @@ reports:
     name_tags:
         name: Varianti del tag nome
         intro: |
-            <p>Questo rapporto mostra le informazioni relativi a come viene
+            <p>Questo rapporto mostra le informazioni relative a come viene
             dato un nome agli oggetti in OSM utilizzando il
             tag <tt>name</tt> tag e le sue varianti.</p>
         overview:
@@ -716,17 +716,17 @@ reports:
     wiki_images:
         name: Immagini wiki
         intro: |
-            Le imamgini utilizzati nel sito wiki come simbolo per le chiavi in
+            Le immagini utilizzate nel sito wiki come simbolo per le chiavi in
             diverse lingue. A volte c'è un'immagine in una delle varie lingue 
             che è la migliore. Tuttavia in alcuni casi ha senso avere
-            diverse immagini a cuasa del diverso background culturale o simili
+            diverse immagini a causa del diverso background culturale o simili
             motivi.
     wiki_problems:
         name: Problemi nella analisi (parsing) del wiki
         intro: |
             Taginfo legge tutte le pagine sul sito wiki utilizzate per descrivere
             le chiavi, i tag e le relazioni per trovare informazioni sui tag.
-            QUesto rapporto mostra una lista dei probelmi riscontrati mentre
+            Questo rapporto mostra una lista dei problemi riscontrati mentre
             queste pagine vengono lette. Questi non sono necessariamente degli
             errori nel wiki, vuole semplicemnte dire che le pagine
             non sono formattate in una maniera che taginfo riesca a comprendere.
