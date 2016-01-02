@@ -376,8 +376,8 @@ pages:
             title: Chiavi simili
             other: Chiavi simili
             count_all_tooltip: Numero degli oggetti con la chiave simile
-            similarity: Somiglianza
-            similarity_tooltip: Un numero più basso indica una maggiore somiglianza
+            similarity: Similarità
+            similarity_tooltip: Un numero più basso indica una maggiore simigliarità
     tag:
         description_from_wiki: Descrizione di questo tag dalla pagina wiki (se disponibile nella lingua selezionata, altrimenti in inglese).
         no_description_in_wiki: Nessuna descrizione nel wiki
@@ -628,13 +628,12 @@ reports:
     languages:
         name: Linguaggi
         intro: |
-            OpenStreetMap è un progetto internazionale. I tag e le loro
-            descrizioni             possono essere in una qualsiasi lingua.
-            Questa tabella mostra le lingue di cui taginfo ha consocenza
-            e per ognuna di queste lingue quante pagine wiki che documentano,
-            rispettivamente, le chiavi e i tag.
+            OpenStreetMap è un progetto internazionale. I tag e le loro descrizioni
+            possono essere in una qualsiasi lingua. Questa tabella mostra le lingue di cui taginfo ha consocenza
+            e per ognuna di queste lingue quante pagine wiki che documentano, rispettivamente,
+            le chiavi e i tag.
         code: Codice
-        native_name: Nome in libgua originale
+        native_name: Nome in lingua originale
         english_name: Nome in inglese
         wiki_key_pages: Pagine wiki per le chiavi
         wiki_tag_pages: Pagine wiki per i tag
@@ -650,92 +649,84 @@ reports:
             un errore di battitura o un errore di altro tipo.
         wiki_pages: Pagine wiki
     name_tags:
-        name: Varianti del tag nome
+        name: Varianti dei tag name
         intro: |
-            <p>Questo rapporto mostra le informazioni relativi a come viene
-            dato un nome agli oggetti in OSM utilizzando il
-            tag <tt>name</tt> tag e le sue varianti.</p>
+            <p>Questo report mostra le informazioni circa la denominazione di oggetti in OSM
+            usando il tag <tt>name</tt> e le sue varianti.</p>
         overview:
-            tab: Anteprima
-            title: Anteprima
+            tab: Panoramica
+            title: Panoramica
         bcp47:
-            tab: I sotto-tag BCP47
-            title: I sotto-tag BCP47
+            tab: BCP47 Subtag
+            title: BCP47 Subtag
             filter:
-                label: Mostra solo i sotto-tag di tipo
+                label: Mostra solo subtag del tipo
                 all: Tutti
                 language: Lingua
                 script: Script
                 region: Regione
                 variant: Variante
             intro: |
-                <p>Lo <a href="http://www.ietf.org/">IETF</a> definisce i <i>tag
-                delle lingue</i> in un suo standard
+                <p>The <a href="http://www.ietf.org/">IETF</a> defines <i>language
+                tags</i> in its standard
                 <a href="http://tools.ietf.org/html/bcp47">Tags for Identifying Languages
-                (BCP47)</a>. I tag delle lingue
-                consistono in uno o più <i>sotto-tag</i> cje descrivono le lingua,
-                gli script, le varianti, edc. La lista seguente mostrai sotto-tag
-                attualmente registrati che sono rilevanti per OSM.
-                Per maggiori informazioni vedi anche la
-                <a href="https://en.wikipedia.org/wiki/IETF_language_tag">pagina
-                di Wikipedia sui tag per le lingue di IETF</a> e il sito <a
-                href="http://www.langtag.net/">langtag.net</a>.</p>
-                <p>Nota che i dati mostrati in questa tabella <b>non</b> provengono
-                da OpenStreetMap, vengono soltanto mostrati i blocchetti da unire che
-                possono essere usati per descrivere le lingue
-                indipendentemente dal fatto che siano realmente utilizzati in OSM.
+                (BCP47)</a>. Language
+                tags consist of one or more <i>subtags</i> describing the language,
+                script, variants, etc. The following list shows the subtags currently
+                registered that are relevant for OSM. For more information see also the
+                <a href="http://en.wikipedia.org/wiki/IETF_language_tag">Wikipedia
+                entry on IETF language tags</a> and the <a
+                href="http://www.langtag.net/">langtag.net</a> site.</p>
+                <p>Note that the data shown in this table is <b>not</b> from OpenStreetMap,
+                it just shows the building blocks that can be used to describe languages
+                irrespective of whether they are actually used in OSM.
                 </p>
     similar_keys:
         name: Chiavi simili
         intro: |
-            Questo rappoeto mostra le chiavi utilizzatefrequentemente e le chiavi
-            simili utilizzate molto raramente. Ciò dovrebbe evidenziare molti degli
-            errori di scrittura delle chiavi più comuni, ma non è perfetto.
-            Prestate attenzione quando correggete i dati! NON modificate seplicemnte
-            in modo meccanico queste chiavi con un cerca e sostituisci.
-            Guardate e controllate ogni caso in modo individuale e risolvete
-            anche gli altri problemi che trovate.
+            Questo report mostra le chiavi usate frequentemente e chiavi simili usate
+            invece raramente. Questo evidenzia molti errori di battitura, ma non è perfetto.
+            Fai attenzione quando correggi i dati! Non modificare semplicemente in maniera
+            meccanica queste chiavi con un trova e sostituisci. Controlla ogni caso
+            individualmente e correggi anche gli altri eventuali problemi che noti.
         key_common: Chiavi usate frequentemente
         key_rare: Chiavi usate raramente
         count_common: Conteggio
         count_rare: Conteggio
-        similarity: Somiglianza
+        similarity: Similarità
     historic_development:
-        name: Analisi dello Storico
+        name: Sviluppo storico
         intro: |
-            Analisi di alcune statistiche rispetto al tempo. Questi dati
-            sono stati raccolti da taginfo, è possibile che siano presenti
-            delle lacune se taginfo non ha funzionato in un giorno per qualche
-            motivo.
+            Sviluppo nel tempo di alcune statistiche importanti. Questi dati sono
+            stati raccolti tramite taginfo, delle lacune potrebbero essere possibili
+            nei giorni in cui, per qualche ragione, taginfo non ha funzionato.
         keys:
-            title: Chiavi univoche
+            title: Chiavi uniche
         tags:
-            title: Tag univoci
+            title: Tag unici
         relation_types:
-            title: Tipo di relazioni univoci
+            title: Tipi di relazione unici
     wiki_images:
         name: Immagini wiki
         intro: |
-            Le imamgini utilizzati nel sito wiki come simbolo per le chiavi in
-            diverse lingue. A volte c'è un'immagine in una delle varie lingue 
-            che è la migliore. Tuttavia in alcuni casi ha senso avere
-            diverse immagini a cuasa del diverso background culturale o simili
-            motivi.
+            Immagini usate nel wiki per simbolizzare le chiavi nelle 
+            differenti lingue. Qualche volta l'immagine da una delle
+            altre lingue è migliore.Alcune volte ha senso però avere
+            immagini differenti a causa dei differenti backgroud culturali.
     wiki_problems:
-        name: Problemi nella analisi (parsing) del wiki
+        name: Problemi di parsing del wiki
         intro: |
-            Taginfo legge tutte le pagine sul sito wiki utilizzate per descrivere
-            le chiavi, i tag e le relazioni per trovare informazioni sui tag.
-            QUesto rapporto mostra una lista dei probelmi riscontrati mentre
-            queste pagine vengono lette. Questi non sono necessariamente degli
-            errori nel wiki, vuole semplicemnte dire che le pagine
-            non sono formattate in una maniera che taginfo riesca a comprendere.
-            Può essere sia che la pagina vada corretta oppure che taginfo vada
-            sistemato.
-        location: Località
-        reason: Ragione
+            Taginfo legge tutte le pagine wiki usate per descrivere le chiavi,
+            tag e relazioni per trovare informazioni sui tag. Questo report 
+            mostra una lista di problemi incontrati durante la lettura di
+            queste pagine. Questi non sono necessariamente errori nel wiki, 
+            possono significare che qualcosa nella pagina wiki non è formattato
+            in un modo comprensibile per taginfo. O la pagina è da correggere, 
+            o è taginfo che deve essere corretto.
+        location: Luogo
+        reason: Motivazione
         wiki_page: Pagina wiki
-        lang: Lingua
+        lang: Lang.
         info: Informazioni aggiuntive
 
 
